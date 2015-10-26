@@ -109,7 +109,7 @@ function OnEntityChangedWorld(Entity, World)
 	return false
 end
 
-function OnPlayerBreakingBlock(Player, IN_x, IN_y, IN_z, BlockFace, Status, OldBlock, OldMeta)
+function OnPlayerBreakingBlock(Player, IN_x, IN_y, IN_z, BlockFace, Status)
 	local _name = Player:GetName()
 	local playerini = cIniFile()
 	local GetIniFileName = "portals_players.ini"
